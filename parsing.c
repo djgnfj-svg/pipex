@@ -6,7 +6,7 @@
 /*   By: ysong <ysong@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 12:29:52 by ysong             #+#    #+#             */
-/*   Updated: 2021/09/30 12:36:46 by ysong            ###   ########.fr       */
+/*   Updated: 2021/09/30 12:39:27 by ysong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,5 @@ char **parsing(char *cmd)
 	parse.pstr = (char **)malloc(sizeof(char *) * (parse.len + 1));
 	if (!parse.pstr)
 		return (0);
-	return (make_cmd(cmd, parse.pstr, &parse))
+	return (make_cmd(cmd, parse.pstr, &parse));
 }
